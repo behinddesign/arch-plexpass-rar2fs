@@ -24,6 +24,8 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 ##############
 ADD rar2fs.sh /home/nobody/rar2fs.sh
 RUN chmod +x /home/nobody/*.sh
+RUN mkdir -p /media_uncompressed
+RUN chown nobody.nobody /media_uncompressed
 
 # docker settings
 #################
