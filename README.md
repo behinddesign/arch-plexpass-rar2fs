@@ -16,7 +16,7 @@ docker pull behinddesign/arch-plexpass-rar2fs
 **Run container**
 
 ```
-docker run -d --net="host" --name=<container name> -v <path for media files>:/media -v <path for config files>:/config -v /etc/localtime:/etc/localtime:ro behinddesign/arch-plexpass-rar2fs
+docker run --privileged -d --net="host" --name=<container name> -v <path for media files>:/media -v <path for config files>:/config -v /etc/localtime:/etc/localtime:ro behinddesign/arch-plexpass-rar2fs
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
